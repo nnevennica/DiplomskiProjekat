@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "baa0c95a-de40-4889-809e-5f59579dca63",
+    "FirstName": "Nevena",
+    "LastName": "Stankovic",
+    "Email": "nevena@gmail.com",
+    "PasswordHash": "AQAAAAIAAYagAAAAEOR/q\u002BVLNq3zhbN\u002BQsDduKGzaKgNd2LConiM8XgVeX6wpS1367UIrs0f2znzs9u\u002Bsw==",
+    "City": "Subotica"
+  },
+  {
+    "Id": "4c0f892f-b782-4a42-8d32-af7043bb10b3",
+    "FirstName": "TestIme",
+    "LastName": "TestPrez",
+    "Email": "test@gmail.com",
+    "PasswordHash": "AQAAAAIAAYagAAAAEC4tf4x17AT8V0J5UxqGGBsyzB3U4eE5EGOWfYspb1HvzgL\u002BXqxcbBjw/Grl6N9tjA==",
+    "City": "Novi Sad"
+  },
+  {
+    "Id": "3c63681c-16a5-4124-93e2-bd7190d019f2",
+    "FirstName": "Ime",
+    "LastName": "Prezime",
+    "Email": "email@gmail.com",
+    "PasswordHash": "AQAAAAIAAYagAAAAECOWLskX0EU4vtsvlJ7gronuldKRxINr/ISVnW2FTcXw/QpSqWBPMcnyY5kvI\u002B\u002BLuw==",
+    "City": "Novi Sad"
+  }
+]

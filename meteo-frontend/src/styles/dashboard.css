@@ -1,0 +1,370 @@
+.dashBg{
+  min-height: 100vh;
+  padding: 24px;
+  background: linear-gradient(120deg, #e9f1f7, #eef7f0);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  position: relative;
+}
+
+.dashContainer{
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.dashHeaderCard{
+  background: rgba(255,255,255,0.95);
+  border: 1px solid #dbe8f2;
+  border-radius: 16px;
+  box-shadow: 0 14px 40px rgba(20, 45, 80, 0.12);
+  padding: 16px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.dashTitle{
+  font-size: 20px;
+  font-weight: 800;
+  color: #1f3a5f;
+}
+
+.dashSub{
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+.dashHint{
+  opacity: 0.65;
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+.dashActions{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dashField{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dashField label{
+  font-size: 12px;
+  color: #3d556b;
+  font-weight: 600;
+}
+
+.dashField select{
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 12px;
+  border: 1px solid #d6e4ef;
+  outline: none;
+  background: white;
+  min-width: 200px;
+}
+
+.dashField select:focus{
+  border-color: #6aa6ff;
+  box-shadow: 0 0 0 3px rgba(106,166,255,0.18);
+}
+
+.ghostBtn{
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: 1px solid #d6e4ef;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.ghostBtn:hover{
+  background: rgba(255,255,255,0.85);
+}
+
+.ghostBtn:active{
+  transform: translateY(1px);
+}
+
+.notifBell{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid #d6e4ef;
+  background: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notifBell:hover{
+  background: rgba(255,255,255,0.85);
+}
+
+.notifBadge{
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: #2f5d8c;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(20, 45, 80, 0.2);
+}
+
+.dashTabs{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tabBtn{
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid #d6e4ef;
+  background: rgba(255,255,255,0.9);
+  cursor: pointer;
+  font-weight: 800;
+  color: #1f3a5f;
+}
+
+.tabBtn.active{
+  background: #1f3a5f;
+  color: white;
+  border-color: #1f3a5f;
+}
+
+.tabBtn:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.dashChips{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.chip{
+  padding: 9px 12px;
+  border-radius: 999px;
+  border: 1px solid #d6e4ef;
+  background: rgba(255,255,255,0.9);
+  cursor: pointer;
+  font-weight: 700;
+  color: #2b4258;
+}
+
+.chip.active{
+  background: #2f5d8c;
+  color: white;
+  border-color: #2f5d8c;
+}
+
+.dashError{
+  background: #ffe3e3;
+  color: #8a1f1f;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ffd0d0;
+}
+
+.chartCard{
+  background: rgba(255,255,255,0.95);
+  border: 1px solid #dbe8f2;
+  border-radius: 16px;
+  box-shadow: 0 14px 40px rgba(20, 45, 80, 0.12);
+  overflow: hidden;
+}
+
+.chartHeader{
+  padding: 14px 16px;
+  border-bottom: 1px solid #eef4fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.chartTitle{
+  font-size: 16px;
+  font-weight: 900;
+  color: #1f3a5f;
+}
+
+.chartNote{
+  opacity: 0.65;
+  font-size: 13px;
+}
+
+.chartBody{
+  height: 420px;
+  padding: 10px 12px 14px;
+}
+
+
+/* NOTIFICATION PANEL */
+
+.notifPanel{
+  position: fixed;
+  top: 0;
+  right: -340px;
+  width: 340px;
+  height: 100vh;
+  background: rgba(255,255,255,0.98);
+  border-left: 1px solid #dbe8f2;
+  box-shadow: -12px 18px 40px rgba(20, 45, 80, 0.16);
+  transition: right 0.25s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.notifPanel.open{
+  right: 0;
+}
+
+.notifPanelHeader{
+  padding: 16px;
+  border-bottom: 1px solid #eef4fa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: white;
+}
+
+.notifPanelTitle{
+  font-size: 17px;
+  font-weight: 800;
+  color: #1f3a5f;
+}
+
+.notifPanelActions{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notifCloseBtn{
+  border: 1px solid #d6e4ef;
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.notifCloseBtn:hover{
+  background: #f7fbff;
+}
+
+.notifPanelBody{
+  padding: 14px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notifEmpty{
+  color: #5f7287;
+  opacity: 0.8;
+  padding: 12px 4px;
+}
+
+
+/* NOTIFICATION ITEMS */
+
+.notifItem{
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e6eef6;
+  border-radius: 14px;
+  padding: 12px 14px 14px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 0 6px 14px rgba(20,45,80,0.08);
+}
+
+.notifItemTopRow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.notifItemTime{
+  font-size: 12px;
+  color: #7a8ea5;
+}
+
+.notifItemClose{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: #6b7a8c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notifItemClose:hover{
+  background: #f2f6fb;
+  color: #1f3a5f;
+}
+
+.notifItemTitle{
+  font-weight: 700;
+  color: #1f3a5f;
+  font-size: 14px;
+  padding-right: 28px;
+}
+
+.notifItemMessage{
+  font-size: 13px;
+  color: #3b4e63;
+  line-height: 1.4;
+}
+
+.notifItem--warn{
+  border-left: 4px solid #f0a23b;
+}
+
+.notifItem--info{
+  border-left: 4px solid #3a7afe;
+}
+
+.notifItem--danger{
+  border-left: 4px solid #e05252;
+}
